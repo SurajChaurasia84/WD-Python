@@ -90,12 +90,12 @@ def wochentag(t):
     return wochentag[t.weekday()]
 
 def datum(z):
-    monat = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "June",
-             "July", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."]
+    monat = ["Jan", "Feb", "Mar", "Apr", "May", "June",
+             "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
     j = z.year
     m = monat[z.month - 1]
     t = z.day
-    return "%s %d %d" % (m, t, j)
+    return "%s %d, %d" % (m, t, j)
 
 def tick():
     t = datetime.today()
