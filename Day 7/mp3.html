@@ -1,61 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Music Player</title>
 
     <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #1d2671, #c33764);
-            font-family: 'Segoe UI', sans-serif;
-        }
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1d2671, #c33764);
+        font-family: "Segoe UI", sans-serif;
+      }
 
-        .player {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 30px 40px;
-            border-radius: 20px;
-            text-align: center;
-            color: #fff;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            width: 320px;
-        }
+      .player {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 30px 40px;
+        border-radius: 20px;
+        text-align: center;
+        color: #fff;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        width: 320px;
+      }
 
-        .player h2 {
-            margin: 0;
-            font-size: 26px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-        }
+      .player h2 {
+        margin: 0;
+        font-size: 26px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+      }
 
-        .player p {
-            margin: 8px 0 20px;
-            font-size: 14px;
-            opacity: 0.9;
-        }
+      .player p {
+        margin: 8px 0 20px;
+        font-size: 14px;
+        opacity: 0.9;
+      }
 
-        audio {
-            width: 100%;
-            outline: none;
-        }
+      audio {
+        width: 100%;
+        outline: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="player">
+      <h2>Aaj Ki Rat</h2>
+      <p>From Stree 2</p>
 
-<div class="player">
-    <h2>Aaj Ki Rat</h2>
-    <p>From Stree 2</p>
-
-    <audio controls muted>
-        <source src="akr.mp3" type="audio/mpeg">
+      <audio controls muted>
+        <source src="akr.mp3" type="audio/mpeg" />
         Your browser does not support audio.
-    </audio>
-</div>
-
-</body>
+      </audio>
+    </div>
+  </body>
 </html>
